@@ -22,6 +22,11 @@ public class CharacterTankController : MonoBehaviour
             _cc.Move(transform.forward * moveSpeed * Time.deltaTime);
         }
 
+        if (Input.GetKey(KeyCode.S))
+        {
+            _cc.Move(transform.forward * moveSpeed * Time.deltaTime * (-0.3f));
+        }
+
         if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(0f, -turnSpeed * Time.deltaTime, 0f);
