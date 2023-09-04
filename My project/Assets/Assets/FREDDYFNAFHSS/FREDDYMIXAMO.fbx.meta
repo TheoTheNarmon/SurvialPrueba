@@ -3,7 +3,37 @@ guid: 30625803818ef9547960cb90d8b59fc8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CARAFREDDY
+    second: {fileID: 2100000, guid: eb96795a13a4bf2419415dcb8a7afbdf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HAIRBONNIE
+    second: {fileID: 2100000, guid: a1960b9ef2e97264bb559a126486b4ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PIERNOTAS
+    second: {fileID: 2100000, guid: df46e676b86483143ae4c8add2522a9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TORSO BONNIE
+    second: {fileID: 2100000, guid: 76dc3d59c750f274eb1ab5f5b7557caf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZAPATOS
+    second: {fileID: 2100000, guid: 998f6e30fe409b449a411ccea77925ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: antebrazo
+    second: {fileID: 2100000, guid: 3f9a8d010304f794194a7feefa74937c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
