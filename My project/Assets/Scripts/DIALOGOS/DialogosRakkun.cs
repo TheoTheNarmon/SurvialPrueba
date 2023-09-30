@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class DialogosRakkun : MonoBehaviour
 {
-    public Canvas canvas;
+    public Canvas IconeCanvas;
+    public Canvas DialogueCanvas;
     public DialogueScript dialogueScript; // Agrega una referencia al DialogueScript
+    public string[] Lines;
+    private bool dialogue = false;
 
     void Start()
     {
         // Desactiva el Canvas al iniciar
-        canvas.gameObject.SetActive(false);
+        IconeCanvas.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -18,7 +21,8 @@ public class DialogosRakkun : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Activa el Canvas al entrar en la TriggerZone
-            canvas.gameObject.SetActive(true);
+            dialogue = false;
+            IconeCanvas.gameObject.SetActive(true);
         }
     }
 
@@ -27,16 +31,23 @@ public class DialogosRakkun : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Desactiva el Canvas al salir de la TriggerZone
-            canvas.gameObject.SetActive(false);
+            IconeCanvas.gameObject.SetActive(false);
         }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
+        if (other.CompareTag("Player") && Input.GetKey(KeyCode.E))
         {
             // Llama al método StartDialogue del DialogueScript
-            dialogueScript.StartDialogue();
+            if (!dialogue)
+            {
+                dialogue = true;
+                IconeCanvas.gameObject.SetActive(false);
+                DialogueCanvas.gameObject.SetActive(true);
+                dialogueScript.setLine(Lines);
+                dialogueScript.StartDialogue();
+            }
         }
     }
 

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
+using System.Linq;
 
 public class DialogueScript : MonoBehaviour
 {
@@ -10,7 +12,7 @@ public class DialogueScript : MonoBehaviour
  //lineas
    public string[] Lines;
  //velocidad
-   public float textSpeed= 0.1f;
+   public float textSpeed= 0.05f;
  //saber que linea estamos
    int index; 
 
@@ -39,7 +41,7 @@ public class DialogueScript : MonoBehaviour
     public void StartDialogue()
     {
         index = 0;
-
+        dialogueText.text = string.Empty;
         StartCoroutine(WriteLine());
     }
     
@@ -75,6 +77,11 @@ public void NextLine()
        gameObject.SetActive(false);
     }
 }
+
+    public void setLine(string[] text)
+    {
+        Lines = text;
+    }
 
 
 

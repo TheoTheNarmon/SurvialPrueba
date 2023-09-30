@@ -1752,14 +1752,13 @@ GameObject:
   - component: {fileID: 1461622286}
   - component: {fileID: 1461622285}
   - component: {fileID: 1461622288}
-  - component: {fileID: 1461622289}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1461622284
 Transform:
   m_ObjectHideFlags: 0
@@ -1858,25 +1857,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd25c64e76cd4c45a63824da9e5128b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 1523280365}
-  dialogueScript: {fileID: 1461622289}
---- !u!114 &1461622289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461622283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 059aee3494a563944a9dece76af6c49a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueText: {fileID: 946152223601118449}
+  IconeCanvas: {fileID: 1523280365}
+  DialogueCanvas: {fileID: 3644775864636142674}
+  dialogueScript: {fileID: 7568767432896848286}
   Lines:
-  - Holaa
-  - esto es un test
-  textSpeed: 0.09
+  - holaaaa
+  - esto es una prueba
 --- !u!1 &1474310975
 GameObject:
   m_ObjectHideFlags: 0
@@ -3887,6 +3873,7 @@ GameObject:
   - component: {fileID: 3644775864636142674}
   - component: {fileID: 4524011404664993577}
   - component: {fileID: 7568767432896848285}
+  - component: {fileID: 7568767432896848286}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -5252,6 +5239,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7568767432896848286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3094973225206484217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059aee3494a563944a9dece76af6c49a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 946152223601118449}
+  Lines: []
+  textSpeed: 0.1
 --- !u!33 &7785671926503300835
 MeshFilter:
   m_ObjectHideFlags: 0
