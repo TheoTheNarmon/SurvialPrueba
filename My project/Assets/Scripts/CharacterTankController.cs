@@ -42,10 +42,7 @@ public class CharacterTankController : MonoBehaviour
         ApplyGravity();
     }
 
-    public void Esconderse()
-    {
-        Debug.Log("me escondí");
-    }
+
     private void ApplyGravity()
     {
         Vector3 fallVelocity = new Vector3(0f, -gravity, 0f);
