@@ -1436,6 +1436,7 @@ GameObject:
   - component: {fileID: 1219796507}
   - component: {fileID: 1219796509}
   - component: {fileID: 1219796510}
+  - component: {fileID: 1219796511}
   m_Layer: 0
   m_Name: VcamPRIMERAPERSONA
   m_TagString: Untagged
@@ -1579,6 +1580,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensitivity: 100
   player: {fileID: 637870559}
+--- !u!114 &1219796511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219796505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88571dab8b35d4986bd57c94d47728a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  on: 1
+  grayscale: 0
+  amount: 800
+  strength: 0.9
+  noise: 0.4
+  speed: 5
+  material: {fileID: 2100000, guid: 34707840cacc149bbae1e03a783fcb40, type: 2}
 --- !u!1 &1256507623
 GameObject:
   m_ObjectHideFlags: 0
@@ -4319,6 +4339,7 @@ GameObject:
   - component: {fileID: 4764063827639217818}
   - component: {fileID: 242806021913516953}
   - component: {fileID: 3735259022471602091}
+  - component: {fileID: 5881176594998144610}
   m_Layer: 0
   m_Name: CAMERATHIRD
   m_TagString: Untagged
@@ -4890,6 +4911,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1945568233454668559}
   m_LocalEulerAnglesHint: {x: 14.782, y: 0, z: 0}
+--- !u!114 &5881176594998144610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3609388082132010974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88571dab8b35d4986bd57c94d47728a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  on: 1
+  grayscale: 0
+  amount: 800
+  strength: 0.9
+  noise: 0.4
+  speed: 5
+  material: {fileID: 2100000, guid: 34707840cacc149bbae1e03a783fcb40, type: 2}
 --- !u!4 &5899252318527738184
 Transform:
   m_ObjectHideFlags: 0
