@@ -11,6 +11,7 @@ public class Esconderse : MonoBehaviour
     private float tiempo;
 
     public GameObject Player;
+    public CharacterController CharacterController;
 
     public bool entra;
     private bool sale;
@@ -23,6 +24,7 @@ public class Esconderse : MonoBehaviour
     {
         Player = GameObject.FindGameObjectWithTag("Player");
         playerT = Player.GetComponent<Transform>();
+        CharacterController = Player.GetComponent<CharacterController>();
     }
 
     private void Update()
@@ -30,9 +32,10 @@ public class Esconderse : MonoBehaviour
         if (entra == true) {
             playerT.position = Vector3.Lerp(playerT.position, dentro.position, tiempo * Time.deltaTime);
             playerT.rotation = Quaternion.Lerp(playerT.rotation, dentro.rotation, tiempo * Time.deltaTime);
+            CharacterController.enabled = false;
 
             //se sale del escondite con espacio para que no se bugee con el collider
-            if(Input.GetKeyDown(KeyCode.Space)) {
+            if (Input.GetKeyDown(KeyCode.Space)) {
                 entra = false;
                 sale = true;
             }
@@ -51,6 +54,7 @@ public class Esconderse : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         sale = false;
+        CharacterController.enabled = true;
     }
 
     //que se active el escondite con la E

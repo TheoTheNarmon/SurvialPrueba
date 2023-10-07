@@ -530,7 +530,7 @@ Transform:
   m_GameObject: {fileID: 98062252}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -1.52, z: 1.67}
+  m_LocalPosition: {x: -0, y: -1.52, z: 2.65}
   m_LocalScale: {x: 1, y: 1.9576, z: 1.5024}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -552,6 +552,7 @@ MonoBehaviour:
   fuera: {fileID: 226393815}
   tiempo: 2
   Player: {fileID: 637870556}
+  CharacterController: {fileID: 0}
   entra: 0
   IconeCanvas: {fileID: 1523280365}
 --- !u!65 &98062255
@@ -677,7 +678,7 @@ Transform:
   m_GameObject: {fileID: 226393814}
   serializedVersion: 2
   m_LocalRotation: {x: -1.6653345e-16, y: -0.99958163, z: 4.7704896e-16, w: 0.028923703}
-  m_LocalPosition: {x: 0, y: -3.4404016, z: 5.594944}
+  m_LocalPosition: {x: 0.06, y: 0.06, z: 6.623}
   m_LocalScale: {x: 1.00168, y: 1.9575998, z: 1.5007205}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -815,7 +816,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 2.0000012, y: 7.669891, z: 2.0000012}
   m_Center: {x: 3.1025524e-10, y: 0.00026607513, z: 0.33313805}
@@ -1472,6 +1473,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thirdPersonCamera: {fileID: 1800735059382884031}
   firstPersonCamera: {fileID: 1219796508}
+  jugador: {fileID: 0}
+  Player: {fileID: 637870558}
 --- !u!114 &1219796508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2661,7 +2664,7 @@ Transform:
   m_GameObject: {fileID: 1824881958}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.11999922, y: -0.61950403, z: 0.85036606}
+  m_LocalPosition: {x: -0.12, y: -0.46, z: 0.77}
   m_LocalScale: {x: 1, y: 1.9575998, z: 1.5024003}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2851,6 +2854,7 @@ MonoBehaviour:
   fuera: {fileID: 0}
   tiempo: 0
   Player: {fileID: 0}
+  CharacterController: {fileID: 0}
   entra: 0
   IconeCanvas: {fileID: 0}
 --- !u!65 &2046452144
@@ -3843,6 +3847,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thirdPersonCamera: {fileID: 1800735059382884031}
   firstPersonCamera: {fileID: 1219796508}
+  jugador: {fileID: 0}
+  Player: {fileID: 0}
 --- !u!4 &1955192197295817304
 Transform:
   m_ObjectHideFlags: 0
