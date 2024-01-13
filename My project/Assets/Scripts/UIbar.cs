@@ -18,6 +18,11 @@ public class LifeBar : MonoBehaviour
         slider.value = currento;
     }
 
+    public void sumBar(float valor)
+    {
+        ChangeBarCurrent(slider.value + valor);
+    }
+
     public void BarInitialize(float valor)
     {
         slider = GetComponent<Slider>();

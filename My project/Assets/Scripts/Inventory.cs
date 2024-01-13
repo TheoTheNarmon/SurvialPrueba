@@ -20,6 +20,10 @@ public class Inventory : MonoBehaviour
     {
         inventario.Add(item);
     }
+    public void removeObject(Item item)
+    {
+        inventario.Remove(item);
+    }
 
     void Start()
     {
@@ -52,6 +56,15 @@ public class Inventory : MonoBehaviour
                 imagen.sprite = inventario[selected].ItemIcon;
             }
         }
+        
+        if (inventario[selected] == null)
+        {
+            removeObject(inventario[selected]);
+            selected = 0;
+            inventario[selected].activar();
+            imagen.sprite = inventario[selected].ItemIcon;
+        }
+
     }
 
 }
